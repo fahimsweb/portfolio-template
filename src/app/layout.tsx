@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import packageJson from "../../package.json";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Fahim Portfolio",
-  description: "Fahim Portfolio",
+  title: packageJson.title,
+  description: packageJson.description,
 };
 
 export default function RootLayout({
@@ -13,11 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`bg-custom antialiased`}>{children}</body>
     </html>
   );
 }
