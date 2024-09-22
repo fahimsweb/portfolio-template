@@ -12,10 +12,9 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start",
 		"predeploy": "yarn build",
 		"deploy": "gh-pages -d build",
-		"lint": "eslint .",
+		"lint": "next lint",
 		"format": "prettier --write ."
 	},
 	"dependencies": {
