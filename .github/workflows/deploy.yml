@@ -1,3 +1,6 @@
+env:
+  NEXT_TELEMETRY_DISABLED: 1
+
 name: Deploy Next.js to GitHub Pages
 
 on:
@@ -17,9 +20,6 @@ jobs:
 
       - name: Build the project
         run: npm run build
-
-      - name: Export the static site
-        run: npm run export
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
