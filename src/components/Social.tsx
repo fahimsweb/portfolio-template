@@ -6,10 +6,11 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Social() {
   return (
-    <header className="flex w-full items-center justify-center space-x-8 bg-transparent p-8">
+    //flex-col space-x-0
+    <header className="flex w-full flex-col items-center justify-center space-x-0 space-x-8 bg-transparent p-8 md:flex-row md:space-x-8 md:p-8">
       <a
         className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-        href="./resume.pdf"
+        href={packageJson.author.linkedIn} // TODO: A resume.pdf could be used here.
         target="_blank"
         rel="noopener noreferrer"
       >
