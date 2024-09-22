@@ -1,46 +1,49 @@
 {
-	"name": "fahim-portfolio",
-	"version": "0.1.0",
-	"private": true,
-	"homepage": "https://fahimsweb.github.io/portfolio",
-	"description": "Fahim Personal Portolio",
-	"author": {
-		"name": "Fahim Mohammed",
-		"email": "thefmcoder@gmail.com",
-		"url": "https://fahimsweb.github.io/portfolio/"
-	},
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"predeploy": "yarn build",
-		"deploy": "gh-pages -d build",
-		"lint": "next lint",
-		"format": "prettier --write ."
-	},
-	"dependencies": {
-		"next": "14.2.13",
-		"react": "^18",
-		"react-dom": "^18",
-		"react-icons": "^5.3.0"
-	},
-	"devDependencies": {
-		"@types/node": "^20",
-		"@types/react": "^18",
-		"@types/react-dom": "^18",
-		"eslint": "^8.57.1",
-		"eslint-config-next": "14.2.13",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-prettier": "^5.2.1",
-		"eslint-plugin-react": "^7.36.1",
-		"gh-pages": "^6.1.1",
-		"postcss": "^8",
-		"prettier": "^3.3.3",
-		"prettier-plugin-tailwindcss": "^0.6.6",
-		"tailwindcss": "^3.4.1",
-		"typescript": "5.5.4"
-	},
-	"prettier": {
-		"useTabs": true,
-		"tabWidth": 4
-	}
+  "name": "portfolio-template",
+  "version": "0.2.0",
+  "private": true,
+  "homepage": "https://fahimsweb.github.io/portfolio-template",
+  "title": "Welcome to Fahim's Portfolio",
+  "description": "Created by Fahim - An Opensource starter Portfolio template with NextJS, React, Typescript, Tailwind and react-icons, feel free to use it as you wish ;). Make sure to update the author section and description sections accordingly",
+  "author": {
+    "name": "Fahim Mohammed",
+    "email": "thefmcoder@gmail.com",
+    "url": "https://fahimsweb.github.io/portfolio-template/",
+    "github": "https://github.com/fahimsweb",
+    "linkedIn": "https://www.linkedin.com/in/fahimsweb",
+    "like": "Inspired by this portfolio? Create yours for free (it’s open source)!",
+    "bio": "A frontend software engineer with extensive experience in developing high-performance, user-centric webapplications. I focus on delivering clean, maintainable code and creating intuitive user experiences. With a passion for continuous learning and collaboration, I thrive on tackling complex challenges and contributing to innovative solutions. Let’s connect!"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
+    "clean-check": "prettier --c \"**/*.{js,jsx,ts,tsx,md,json,cjs,mjs}\" ",
+    "clean": "prettier  --log-level warn --write \"**/*.{js,jsx,ts,tsx,md,json,cjs,mjs}\" ",
+    "lint-check": "eslint ./src --ext .js,.jsx,.ts,.tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix"
+  },
+  "dependencies": {
+    "next": "14.2.13",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.13",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.36.1",
+    "gh-pages": "^6.1.1",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "tailwindcss": "^3.4.1",
+    "typescript": "5.5.4"
+  }
 }

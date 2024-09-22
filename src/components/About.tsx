@@ -1,24 +1,29 @@
-import { FC } from "react";
+import packageJson from "../../package.json";
 
-export const About: FC = () => {
-	return (
-		<div className="mx-auto max-w-2xl py-15 sm:py-24 lg:py-15 opacity-70 animate-fadeInUp">
-			<div className="text-center">
-				<div className="bg-gradient-to-r from-blue-800 to-blue-950 text-white p-8 rounded-lg shadow-xl">
-					<h1 className="text-3xl font-bold mb-4">
-						Hi there! I’m Fahim
-					</h1>
-					<blockquote className="mb-4 text-xl">
-						A frontend software engineer with extensive experience
-						in developing high-performance, user-centric web
-						applications. I focus on delivering clean, maintainable
-						code and creating intuitive user experiences. With a
-						passion for continuous learning and collaboration, I
-						thrive on tackling complex challenges and contributing
-						to innovative solutions. Let’s connect!
-					</blockquote>
-				</div>
-			</div>
-		</div>
-	);
-};
+export default function About() {
+  return (
+    <div className="animate-fadeInUp mx-auto max-w-2xl py-10 opacity-70 sm:py-10 lg:py-10">
+      <div className="text-center">
+        <div className="rounded-lg bg-transparent p-2 text-white shadow-xl">
+          <h1 className="mb-4 text-left text-3xl font-bold">
+            <svg
+              className="mb-3 h-10 w-10 text-gray-400 dark:text-gray-600"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 18 14"
+            >
+              <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+            </svg>
+            <blockquote className="text-xxl pb-2 font-semibold italic">
+              Hi there! I’m {packageJson.author.name}
+            </blockquote>
+          </h1>
+          <p className="max-w-lg text-xl font-semibold leading-relaxed">
+            {packageJson.author.bio}.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
