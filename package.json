@@ -17,8 +17,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out",
     "clean-check": "prettier --c \"**/*.{js,jsx,ts,tsx,md,json,cjs,mjs}\" ",
     "clean": "prettier  --log-level warn --write \"**/*.{js,jsx,ts,tsx,md,json,cjs,mjs}\" ",
     "lint-check": "eslint ./src --ext .js,.jsx,.ts,.tsx --report-unused-disable-directives --max-warnings 0",
