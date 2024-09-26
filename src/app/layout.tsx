@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import packageJson from "../../package.json";
 import "./globals.css";
-import ParticlesBackground from "../components/Particles";
+import { ParticlesBackground } from "../components/Particles";
 
 export const metadata: Metadata = {
   title: packageJson.title,
@@ -16,7 +16,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-custom antialiased`}>
-        <ParticlesBackground>{children}</ParticlesBackground>
+        <ParticlesBackground />
+        {children}
       </body>
     </html>
   );
