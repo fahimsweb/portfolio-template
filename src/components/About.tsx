@@ -16,10 +16,11 @@ export default function About() {
               <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
             </svg>
             <blockquote className="text-xxl pb-2 font-semibold italic">
-              Hi there! I’m {packageJson.author.name}
+              Hi there! I’m{" "}
+              <span className="text-blue-600">{packageJson.author.name}</span>
             </blockquote>
           </h1>
-          <p className="max-w-lg text-xl font-semibold leading-relaxed">
+          <p className="max-w-lg text-xl leading-relaxed">
             {packageJson.author.bio}.
           </p>
         </div>

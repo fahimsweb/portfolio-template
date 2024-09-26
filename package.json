@@ -1,8 +1,8 @@
 {
   "name": "portfolio-template",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
-  "homepage": "https://fahimsweb.github.io/portfolio",
+  "homepage": "https://fahimsweb.github.io/portfolio-template",
   "title": "Welcome to Fahim's Portfolio",
   "description": "Created by Fahim - An Opensource starter Portfolio template with NextJS, React, Typescript, Tailwind and react-icons, feel free to use it as you wish ;). Make sure to update the author section and description sections accordingly",
   "author": {
@@ -12,7 +12,21 @@
     "github": "https://github.com/fahimsweb",
     "linkedIn": "https://www.linkedin.com/in/fahimsweb",
     "like": "Inspired by this portfolio? Create yours for free (it’s open source)!",
-    "bio": "A frontend software engineer with extensive experience in developing high-performance, user-centric webapplications. I focus on delivering clean, maintainable code and creating intuitive user experiences. With a passion for continuous learning and collaboration, I thrive on tackling complex challenges and contributing to innovative solutions. Let’s connect!"
+    "bio": "A frontend software engineer with extensive experience in developing high-performance, user-centric web applications. I focus on delivering clean, maintainable code and creating intuitive user experiences. With a passion for continuous learning and collaboration, I thrive on tackling complex challenges and contributing to innovative solutions. Let’s connect!",
+    "skills": [
+      "react",
+      "vuejs",
+      "angular",
+      "typescript",
+      "MaterialUI",
+      "bootstrap",
+      "NodeJs",
+      "Express",
+      "React Native",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ]
   },
   "scripts": {
     "dev": "next dev",
@@ -28,7 +42,9 @@
     "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.3.0"
+    "react-icons": "^5.3.0",
+    "tsparticles": "^3.5.0",
+    "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {
     "@types/node": "^20",
