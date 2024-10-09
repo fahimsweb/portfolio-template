@@ -2,7 +2,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
-  type Container,
   type ISourceOptions,
   MoveDirection,
   OutMode,
@@ -30,10 +29,6 @@ export const ParticlesBackground = () => {
     });
   }, []);
 
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
-  };
-
   const options: ISourceOptions = useMemo(
     () => ({
       background: {
@@ -43,6 +38,10 @@ export const ParticlesBackground = () => {
         zIndex: -1,
       },
       fpsLimit: 120,
+      fullScreen: {
+        enable: true,
+        zIndex: -1,
+      },
       interactivity: {
         events: {
           onClick: {
@@ -52,6 +51,11 @@ export const ParticlesBackground = () => {
           onHover: {
             enable: true,
             mode: "repulse",
+            parallax: {
+              enable: true,
+              force: 60,
+              smooth: 10,
+            },
           },
         },
         modes: {
@@ -108,12 +112,7 @@ export const ParticlesBackground = () => {
 
   if (init) {
     return (
-      <Particles
-        id="tsparticles"
-        particlesLoaded={particlesLoaded}
-        options={options}
-        style={{ zIndex: "-1" }}
-      />
+      <Particles id="tsparticles" options={options} style={{ zIndex: "-1" }} />
     );
   }
 
