@@ -17,11 +17,11 @@ export default function About() {
             </svg>
             <blockquote className="text-xxl pb-2 font-semibold italic">
               Hi there! I’m{" "}
-              <span className="text-blue-600">{packageJson.author.name}</span>
+              <span className="text-blue-500">{packageJson.author.name}</span>
             </blockquote>
           </h1>
           <p className="max-w-lg text-xl leading-relaxed">
-            {packageJson.author.bio}.
+            {packageJson.author.bio}
           </p>
         </div>
       </div>
